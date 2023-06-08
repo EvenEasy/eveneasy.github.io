@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Services</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="https://raw.githubusercontent.com/EvenEasy/TelegramBot/master/image.png?raw=true" width="64" height="64">
+                <span id="welcometext">Ласкаво просимо у Snizhok Bot послуги</span>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="services">
+                    <div class="item">
+                        <h1>Standart</h1>
+                        <p>• Нотактки (максимум 1)<br>• Розклад</p>
+                        <p>Free</p>
+                    </div>
+                    <div class="item">
+                        <h1>Premium</h1>
+                        <p>• Нотактки (max 5)<br>• Дошка завдань (max. 3)<br>• Нагадування (max 3)<br>• Розклад</p>
+                        <p>19 грн / місяць</p>
+                        <button onclick="add_order('Premium')">Обрати</button>
+                    </div>
+                    <div class="item">
+                        <h1>VIP</h1>
+                        <p>• Нотактки (∞)<br>• Дошка завдань (∞)<br>• Нагадування (∞)<br>• Розклад<br>• Статистика</p>
+                        <p>49 грн / місяць</p>
+                        <button onclick="add_order('VIP')">Обрати</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
